@@ -1,0 +1,12 @@
+setup.py
+postUGR/__init__.py
+postUGR/items.py
+postUGR/pipelines.py
+postUGR/settings.py
+postUGR/spiders/__init__.py
+postUGR/spiders/postUGR_spyder.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
