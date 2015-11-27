@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 ### A simple example of BeautifulSoup4 in Python ###
 '''
 This is a super simple example of using BeautifulSoup4 and Requests 
@@ -28,7 +31,7 @@ function(t){var o=n[e][1][t];return r(o?o:t)},o,o.exports)}return t[e].exports}
 # apply BeautifulSoup to get the content
 soup = BeautifulSoup(r.content,"lxml")
 # now the output is more structured
-print (soup.prettify())
+print (soup.prettify().encode('utf-8'))
 
 # part of the result
 '''
@@ -83,7 +86,7 @@ http://www.nytimes.com/recommendations
 url2="http://www.goodreads.com/"
 r2=requests.get(url2)
 soup2 = BeautifulSoup(r2.content,"lxml")
-print (soup2.get_text())
+print (soup2.get_text().encode('utf-8'))
 
 
 

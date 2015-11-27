@@ -62,7 +62,7 @@ class AppleJobsScraper(object):
                 }
             )
 
-            s = BeautifulSoup(r.text)
+            s = BeautifulSoup(r.text,"lxml")
             if not s.requisition:
                 break
 

@@ -1,6 +1,9 @@
-import requests 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import json 
 from bs4 import BeautifulSoup
+import requests
 
 base_url ='http://www.acec.ca/about_acec/search_member_firms/business_sector_search.html/search/business/page/%s'
 

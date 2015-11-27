@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import urllib,urllib2
 import urlparse
 from bs4 import BeautifulSoup

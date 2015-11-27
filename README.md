@@ -3,6 +3,7 @@ requisitos para el workshop
 --------------------------------
 
 python 2.7 installed
+python --version
 
 beautifulsoup for python
 --------------------------------

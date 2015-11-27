@@ -83,8 +83,8 @@ class EuropythonSQLitePipeline(object):
 	def spider_closed(self, spider):
 		db.commit()
 		 
-        # Insert data in database
-        @db_session
+    # Insert data in database
+	@db_session
 	def process_item(self, item, spider):
                 # use db_session as a context manager
                 with db_session:

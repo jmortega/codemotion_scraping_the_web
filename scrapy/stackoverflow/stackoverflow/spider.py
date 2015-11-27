@@ -8,8 +8,6 @@ from scrapy.http import Request
 from scrapy.item import Item, Field
 from scrapy.selector import HtmlXPathSelector
 
-from inline_requests import inline_requests
-
 
 class UserItem(Item):
     name = Field()
@@ -39,7 +37,6 @@ class StackoverflowSpider(CrawlSpider):
         Rule(SgmlLinkExtractor(allow=r'\?page=\d&')),
     )
 
-    @inline_requests
     def parse_profile(self, response):
         base_url = response.url
 

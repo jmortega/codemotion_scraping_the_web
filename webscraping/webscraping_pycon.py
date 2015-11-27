@@ -59,5 +59,8 @@ for talk_pycones in talks_pycones:
 with codecs.open('pycones.csv' ,'wb') as csvfile:
 	pycones_writer = csv.writer(csvfile)
 	for result in talks_pycones:
-            pycones_writer.writerow([str(result['talk'].encode('utf-8')),str(result['author'].encode('utf-8')),str(result['description'].encode('utf-8')),str(result['hour'].encode('utf-8'))])
+            pycones_writer.writerow([str(result['talk'].encode('utf-8')),
+	                             str(result['author'].encode('utf-8')),
+	                             str(result['description'].encode('utf-8')),
+	                             str(result['hour'].encode('utf-8'))])
     

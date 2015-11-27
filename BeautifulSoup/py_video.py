@@ -1,6 +1,9 @@
-import requests
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import bs4
 from multiprocessing.pool import ThreadPool as Pool
+import requests
 
 root_url = 'http://pyvideo.org'
 index_url = root_url + '/category/50/pycon-us-2014'
@@ -39,7 +42,11 @@ def get_video_data(video_page_url):
 def show_video_stats():
 	video_page_urls = get_video_page_urls()
 	for video_page_url in video_page_urls:
-		print get_video_data(video_page_url)
+		try:
+			print video_page_url
+			print(get_video_data(video_page_url))
+		except:
+			pass
 		
 print(get_video_page_urls())		
-print(show_video_stats())
+show_video_stats()

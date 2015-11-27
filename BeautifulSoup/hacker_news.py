@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import requests
 #from keys import consumer_key, code, access_token
 from functools import partial

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from bs4 import BeautifulSoup
 
 import requests
@@ -8,7 +11,7 @@ r  = requests.get("http://" +url)
 
 data = r.text
 
-soup = BeautifulSoup(data)
+soup = BeautifulSoup(data,"lxml")
 
 for link in soup.find_all('a'):
     print(link.get('href'))
