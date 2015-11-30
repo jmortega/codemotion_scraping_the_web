@@ -1,0 +1,1504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>python at DuckDuckGo</title>
+  <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="/opensearch_html.xml">
+  <link href="/favicon.ico" rel="shortcut icon" />
+  <link rel="apple-touch-icon" href="/assets/logo_icon128.v101.png">
+  <link rel="image_src" href="/assets/logo_homepage.normal.v101.png"/>  
+  <link type="text/css" media="handheld, all" href="/s640.css" rel="stylesheet" />
+
+  <style type="text/css">
+
+    #content_wrapper, #zero_click_wrapper {
+      margin: auto;
+      padding-left: 50px;
+      min-width: 100px;
+    }
+
+    #content {
+      padding-top: 20px;
+      min-width: 100px;
+    }
+
+    #did_you_mean {
+      padding-left: 34px;
+    }
+
+    #feedback {
+      display: block;
+    }
+
+    #links, #zero_click {
+      width: 80%;
+    }
+
+    #logo {
+      float: left;
+      margin-top: -10px;
+      margin-left: -80px;
+    }
+
+    #search_form_homepage {
+      float: left;
+      width: 90%;
+      max-width: 700px;
+      min-width: 300px;
+    }
+
+    #search_form_input_homepage {
+      width: 80%;
+      float: left;
+    }
+
+    #search_wrapper_homepage {
+      width: 42px;
+      float: left;
+    }
+
+    #side_wrapper {
+      display: block;
+    }
+
+    #side {
+      right: 2%;
+      position: fixed;
+      top: 100px;
+      width: 90px;
+    }
+
+    #zero_click_abstract {
+/* let the highlight go across the image */
+/*      max-width: 484px; */
+      margin: 5px;
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+    /* put image inside abstract so don't need margin. */
+    #zero_click_image {
+      margin-top: 0px;
+    }
+
+    #zero_click_wrapper {
+      display: block;
+      visibility: visible;
+      padding-left: 0px;
+      margin: 0;
+    }
+
+    #zero_click_wrapper2 {
+      max-height:150px;
+      overflow:auto;
+    }
+
+    #zero_click_plus_wrapper {
+      display: none;
+    }
+
+   
+    .web-result,.zero-click-result {
+    	border:1px solid transparent;
+    }
+
+    .web-result:hover,.zero-click-result:hover {
+      background:url(/assets/results_highlight_bg.v101.png) repeat-x;
+      background-color:#EAEAEA;
+      border: 1px solid #BFBFBF !important;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .web-result-sponsored:hover {
+     background: #eae3ad !important;
+    }
+
+    .web-result-sponsored {
+    background: #fff7d0;
+    border: 1px solid #fef9eb !important;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 2px;;
+    }
+
+    .web-result-sponsored-text {
+    float:right;
+    color: #555555;
+    padding-right: 20px;
+    font-size: 12px;
+    }
+
+    .web-result-sponsored-double {
+        width: 50%;
+        float: left;
+    }
+
+    .web-result-sponsored-double.web-result-sponsored-last {
+        clear: none;
+        margin-left: 5px;
+        margin-right: -30px;
+    }
+
+    .web-result-sponsored-double .web-result-sponsored-text {
+        display: none;
+    }
+
+    .nav-link {
+      float: left;
+      clear: none;
+    }
+
+    .navbutton {
+      background-color:transparent;
+      border: 0px none;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:bold;
+      text-decoration:underline;
+      color: #1168CC;
+      border-bottom: 1px solid transparent;
+      padding: 0px;
+    }
+
+    input.navbutton:hover {
+    	border-bottom: 1px solid #1168CC;
+    }
+
+    @media only handheld, 
+           only screen and (max-device-width: 800px) {
+      html {
+        overflow-x: hidden;
+      }
+
+      body {
+        margin-left: 10px;
+        width: 97%;
+      }
+
+      #content {
+        padding-top: 0px;
+      }
+
+      #content_wrapper,#content,#links,#links_wrapper,#zero_click_wrapper {
+        width: 97%;
+        min-width: 97%;
+        background: #FFF;
+        padding-right:5px;
+        margin-right:0;
+        padding-left:0;
+        margin-left:0;
+      }
+
+      #feedback, #side_wrapper, #logo {
+        display: none;
+      }
+      .web-result-sponsored-double,
+      .web-result-sponsored-double.web-result-sponsored-last {
+        float: none;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body class="yui-skin-sam">
+  <a name="top" id="top"></a>
+
+  <form action="/html/" method="POST">
+    <input type="text" name="state_hidden" id="state_hidden" />
+  </form>
+
+  <div id="content_wrapper">
+  <div id="content">
+
+        <a title="DuckDuckGo" href="/html/">
+	  <img width="60" height="60" src="/assets/logo_icon60.v101.png" alt="DuckDuckGo" id="logo"/>
+	</a>
+
+
+    <form name="x" id="search_form_homepage" class="no-menu" action="/html/" method="POST">
+	  <input name="q" autocomplete="off" id="search_form_input_homepage" type="text" value="python">
+
+	  
+	  
+
+<input name="kl" value="us-en" type="hidden">
+	  
+	  
+	  
+	  
+
+	  <div id="search_wrapper_homepage">
+	  <input name="b" id="search_button_homepage" value="" title="Search" alt="Search" type="submit">
+	  </div>
+    </form>
+
+<div style="padding-top: 20px;">&nbsp;</div>
+
+
+
+
+
+<!-- Web results are present -->
+
+  <div id="links_wrapper">
+  <div id="links">
+
+      
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.python.org/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.python.org/">Welcome to <b>Python</b>.org</a>
+          
+
+	    
+            <div class="snippet">Official site for the interpreted, interactive, object-oriented, extensible programming language. Includes news, documentation, free downloads, and developer information.</div>
+	    
+
+            <div class="url">
+              python.org
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/en.wikipedia.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://en.wikipedia.org/wiki/Python_%28programming_language%29"><b>Python</b> (programming language) - Wikipedia, the free encyclopedia</a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> is a widely used general-purpose, high-level programming language. [20] [21] Its design philosophy emphasizes code readability, and its syntax allows ...</div>
+	    
+
+            <div class="url">
+              en.wikipedia.org/wiki/Python_(programming_language)
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.learnpython.org/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.learnpython.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.learnpython.org/">Learn <b>Python</b> - Free Interactive <b>Python</b> Tutorial</a>
+          
+
+	    
+            <div class="snippet">LearnPython.org is a free interactive <b>Python</b> tutorial for people who want to learn <b>Python</b>, fast.</div>
+	    
+
+            <div class="url">
+              learnpython.org
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.imdb.com/title/tt0209264/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.imdb.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.imdb.com/title/tt0209264/"><b>Python</b> (TV Movie 2000) - IMDb</a>
+          
+
+	    
+            <div class="snippet">Directed by Richard Clabaugh. With Frayne Rosanoff, Robert Englund, Casper Van Dien, William Zabka. After a military plane crash near a small American town, a giant ...</div>
+	    
+
+            <div class="url">
+              imdb.com/title/tt0209264/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://download.cnet.com/Python/3000-2069_4-10080057.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/download.cnet.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://download.cnet.com/Python/3000-2069_4-10080057.html"><b>Python</b> - Free download and software reviews - CNET Download.com</a>
+          
+
+	    
+            <div class="snippet">From <b>Python</b> Software Foundation: <b>Python</b> is a object oriented programming language. Clean syntax, high-level data structures, dynamic typing, and rich support ...</div>
+	    
+
+            <div class="url">
+              download.cnet.com/Python/3000-2069_4-10080057-html
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://wiki.python.org/moin/BeginnersGuide">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/wiki.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://wiki.python.org/moin/BeginnersGuide">BeginnersGuide - <b>Python</b> Wiki</a>
+          
+
+	    
+            <div class="snippet">Beginner&#x27;s Guide to <b>Python</b>. New to programming? ... you need it before you can do any <b>Python</b> programming. Mac OSX distributions from 10.3 (Panther) and up, ...</div>
+	    
+
+            <div class="url">
+              wiki.python.org/moin/BeginnersGuide
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://en.wikipedia.org/wiki/Python">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/en.wikipedia.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://en.wikipedia.org/wiki/Python"><b>Python</b> - Wikipedia, the free encyclopedia</a>
+          
+
+	    
+            <div class="snippet">A <b>python</b> is a constricting snake belonging to the <b>Python</b>, or, more generally, any snake in the family Pythonidae (containing the <b>Python</b> genus).</div>
+	    
+
+            <div class="url">
+              en.wikipedia.org/wiki/Python
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://docs.python.org/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/docs.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://docs.python.org/">Overview — <b>Python</b> 3.5.0 documentation</a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> 3.5.0 documentation. Welcome! This is the documentation for <b>Python</b> 3.5.0, last updated Nov 18, 2015. Parts of the documentation:</div>
+	    
+
+            <div class="url">
+              docs.python.org
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.python.org/downloads/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.python.org/downloads/">Download <b>Python</b> | <b>Python</b>.org</a>
+          
+
+	    
+            <div class="snippet">The official home of the <b>Python</b> Programming Language</div>
+	    
+
+            <div class="url">
+              python.org/downloads/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://docs.python.org/2/tutorial/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/docs.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://docs.python.org/2/tutorial/">The <b>Python</b> Tutorial — <b>Python</b> 2.7.10 documentation</a>
+          
+
+	    
+            <div class="snippet">The <b>Python</b> Tutorial¶ <b>Python</b> is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to ...</div>
+	    
+
+            <div class="url">
+              docs.python.org/2/tutorial/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://dictionary.reference.com/browse/python?s=t">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/dictionary.reference.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://dictionary.reference.com/browse/python?s=t"><b>Python</b> | Define <b>Python</b> at Dictionary.com</a>
+          
+
+	    
+            <div class="snippet">noun 1. any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet (6 meters): the Indian <b>python</b>, <b>Python</b> ...</div>
+	    
+
+            <div class="url">
+              dictionary.reference.com/browse/python?s=t
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.tutorialspoint.com/python/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.tutorialspoint.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.tutorialspoint.com/python/"><b>Python</b> tutorial - Tutorialspoint</a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990.</div>
+	    
+
+            <div class="url">
+              tutorialspoint.com/python/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://wiki.python.org/moin/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/wiki.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://wiki.python.org/moin/">FrontPage - <b>Python</b> Wiki</a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> combines remarkable power with very clear syntax. It has modules, classes, exceptions, very high level dynamic data types, and dynamic typing.</div>
+	    
+
+            <div class="url">
+              wiki.python.org/moin/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://learnpythonthehardway.org/book/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/learnpythonthehardway.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://learnpythonthehardway.org/book/">Learn <b>Python</b> The Hard Way</a>
+          
+
+	    
+            <div class="snippet">Welcome to the 3rd Edition of Learn <b>Python</b> the Hard Way. You can visit the companion site to the book at http://learnpythonthehardway.org/ where you can purchase ...</div>
+	    
+
+            <div class="url">
+              learnpythonthehardway.org/book/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://stackoverflow.com/questions/tagged/python">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/stackoverflow.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://stackoverflow.com/questions/tagged/python">Newest <b>&#x27;python&#x27;</b> Questions - Stack Overflow</a>
+          
+
+	    
+            <div class="snippet">Q&amp;A for professional and enthusiast programmers ... Tour Start here for a quick overview of the site</div>
+	    
+
+            <div class="url">
+              stackoverflow.com/questions/tagged/python
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://sourceforge.net/projects/python/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/sourceforge.net.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://sourceforge.net/projects/python/"><b>Python</b> download | SourceForge.net</a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> download. <b>Python</b> 2013-04-08 19:49:10 free download. <b>Python</b> The <b>Python</b> programming language, an object-oriented scripting and rapid application ...</div>
+	    
+
+            <div class="url">
+              sourceforge.net/projects/python/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.thefreedictionary.com/Python">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.thefreedictionary.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.thefreedictionary.com/Python"><b>Python</b> - definition of <b>python</b> by The Free Dictionary</a>
+          
+
+	    
+            <div class="snippet">Now a snake, especially a wary old <b>python</b> like Kaa, very seldom shows that he is angry, but Baloo and Bagheera could see the big swallowing muscles on either side of ...</div>
+	    
+
+            <div class="url">
+              thefreedictionary.com/Python
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://pypi.python.org/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/pypi.python.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://pypi.python.org/">PyPI - the <b>Python</b> Package Index</a>
+          
+
+	    
+            <div class="snippet">PyPI - the <b>Python</b> Package Index. The <b>Python</b> Package Index is a repository of software for the <b>Python</b> programming language. There are currently 69986 packages here.</div>
+	    
+
+            <div class="url">
+              pypi.python.org
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.lynda.com/Python-training-tutorials/415-0.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.lynda.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.lynda.com/Python-training-tutorials/415-0.html"><b>Python</b> Tutorials | Lynda.com</a>
+          
+
+	    
+            <div class="snippet">Try our <b>Python</b> tutorials — every online course includes free video tutorials. Become a member to keep learning, with unlimited access to every course in our library.</div>
+	    
+
+            <div class="url">
+              lynda.com/Python-training-tutorials/415-0-html
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.python.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.python.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.python.com/">Welcome to <b>Python</b>.com</a>
+          
+
+	    
+            <div class="snippet">The <b>Python</b>® program is no longer excepting new affiliates. The <b>Python</b>® program is no longer excepting new affiliates. Should you have any questions, please email ...</div>
+	    
+
+            <div class="url">
+              python.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.britannica.com/animal/python-snake-group">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.britannica.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.britannica.com/animal/python-snake-group"><b>python</b> | snake group | Britannica.com</a>
+          
+
+	    
+            <div class="snippet">Any of about 40 species of snakes, all but one of which are found in the Old World tropics and subtropics. Most are large, with the reticulated <b>python</b> (<b>Python</b> ...</div>
+	    
+
+            <div class="url">
+              britannica.com/animal/python-snake-group
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://learnpythonthehardway.org/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/learnpythonthehardway.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://learnpythonthehardway.org/">Learn <b>Python</b></a>
+          
+
+	    
+            <div class="snippet">Buy Learn <b>Python</b> The Hard Way For $29.95 or Try It For Free. Read by 1.5 million people a year to learn the basics of programming, Learn <b>Python</b> The Hard Way is the ...</div>
+	    
+
+            <div class="url">
+              learnpythonthehardway.org
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://developers.google.com/edu/python/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/developers.google.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://developers.google.com/edu/python/">Google&#x27;s <b>Python</b> Class | Google for Education | Google Developers</a>
+          
+
+	    
+            <div class="snippet">Welcome to Google&#x27;s <b>Python</b> Class -- this is a free class for people with a little bit of programming experience who want to learn <b>Python</b>. The class ...</div>
+	    
+
+            <div class="url">
+              developers.google.com/edu/python/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://animals.sandiegozoo.org/animals/python">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/animals.sandiegozoo.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://animals.sandiegozoo.org/animals/python"><b>Python</b> | San Diego Zoo Animals</a>
+          
+
+	    
+            <div class="snippet"><b>Pythons</b> can be difficult to find and watch long enough to learn their habits. They are found in rain forests, grasslands and savannas, woodlands, swamps, rocky ...</div>
+	    
+
+            <div class="url">
+              animals.sandiegozoo.org/animals/python
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://python.about.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/python.about.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://python.about.com/">Learn <b>Python</b> - Tutorials and Tips</a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> is one of the most powerful and popular dynamic languages in use today and is easy to learn.</div>
+	    
+
+            <div class="url">
+              python.about.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://groups.engin.umd.umich.edu/CIS/course.des/cis400/python/python.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/groups.engin.umd.umich.edu.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://groups.engin.umd.umich.edu/CIS/course.des/cis400/python/python.html">The <b>Python</b> Programming Language</a>
+          
+
+	    
+            <div class="snippet">Significant Language Features <b>Python</b> is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very ...</div>
+	    
+
+            <div class="url">
+              groups.engin.umd.umich.edu/CIS/course.des/cis400/python/python.html
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://github.com/python/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/github.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://github.com/python/"><b>Python</b> · GitHub</a>
+          
+
+	    
+            <div class="snippet">asyncio. This project is the asyncio module for <b>Python</b> 3.3. Since <b>Python</b> 3.4, asyncio is part of the standard library. Updated Nov 21, 2015</div>
+	    
+
+            <div class="url">
+              github.com/python/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://animals.nationalgeographic.com/animals/reptiles/burmese-python/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/animals.nationalgeographic.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://animals.nationalgeographic.com/animals/reptiles/burmese-python/">Burmese <b>Python</b> - National Geographic</a>
+          
+
+	    
+            <div class="snippet">Learn all you wanted to know about Burmese <b>pythons</b> with pictures, videos, photos, facts, and news from National Geographic.</div>
+	    
+
+            <div class="url">
+              animals.nationalgeographic.com/animals/reptiles/burmese-python/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://python.about.com/od/gettingstarted/ss/whatispython.htm">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/python.about.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://python.about.com/od/gettingstarted/ss/whatispython.htm">What is <b>Python</b>? - About <b>Python</b></a>
+          
+
+	    
+            <div class="snippet"><b>Python</b> is a programming language that is freely available and that makes solving a computer problem almost as easy as writing out one&#x27;s thoughts about the solution.</div>
+	    
+
+            <div class="url">
+              python.about.com/od/gettingstarted/ss/whatispython-htm
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://callofduty.wikia.com/wiki/Python">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/callofduty.wikia.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://callofduty.wikia.com/wiki/Python"><b>Python</b> - The Call of Duty Wiki - Black Ops II, Ghosts, and ...</a>
+          
+
+	    
+            <div class="snippet">Trivia Edit Call of Duty: Black Ops Edit. Pack-a-Punching the <b>Python</b> removes the tritium on the iron sights, much like how it was early in development.</div>
+	    
+
+            <div class="url">
+              callofduty.wikia.com/wiki/Python
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+
+        
+        
+                <div class="results_links_more nav-link">
+        <form action="/html/" method="POST">
+          <!-- <a rel="next" href="/html/?q=python&amp;t=D&amp;v=l&amp;l=us-en&amp;p=1&amp;s=30&amp;o=json&amp;ct=ES&amp;ss_mkt=us&amp;sp=0&amp;nextParams=Keywords%3Dpython%26xargs%3D12KPjg1pZSrp68i%252D%255FoMPCRErjGnQNVmZ615JIuTcQ%255FQZAD6A5dYdR%255FePqBypItDrUtu0KJk6nQo%255FpPIfD7ucu6%26hData%3D12KPjg1o1gnrP2yrqrBry7TZWHxl8EnJC8hsJrC5ALH6ZfhndpUOh3T5Px&amp;dc=31&amp;api=d.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next">
+          <input type="hidden" name="q" value="python">
+          <input type="hidden" name="s" value="30">
+	  <input type="hidden" name="nextParams" value="Keywords=python&amp;xargs=12KPjg1pZSrp68i%2D%5FoMPCRErjGnQNVmZ615JIuTcQ%5FQZAD6A5dYdR%5FePqBypItDrUtu0KJk6nQo%5FpPIfD7ucu6&amp;hData=12KPjg1o1gnrP2yrqrBry7TZWHxl8EnJC8hsJrC5ALH6ZfhndpUOh3T5Px">
+	  <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="31">
+          <input type="hidden" name="api" value="d.js">
+
+	  
+	  
+
+<input name="kl" value="us-en" type="hidden">
+	  
+	  
+	  
+	  
+        </form>
+                </div>
+        
+        <div style="clear:both;"></div>
+
+	</div>
+	</div> <!-- links wrapper //--> 
+
+
+
+
+    <div id="side_wrapper">
+    <div id="side_wrapper2">
+      <div id="side">
+
+      <div class="ch7">
+        <a href="/spread.html" rel="nofollow" class="les2">Spread DDG!</a>
+      </div>
+
+      <div style="margin-top: 12px;" class="ch4">
+        Try search on:
+      </div>
+
+      <div class="spacer_top_3">
+        <a href=
+        "http://www.bing.com/images/search?q=python&amp;go=&amp;form=QBIL&amp;qs=n&amp;sk=&amp;sc=8-3"
+        title="Bing Images" rel="nofollow"><img src=
+        "/b_images2.png" class="inline" /></a> <a title="Bing Images"
+        href=
+        "http://www.bing.com/images/search?q=python&amp;go=&amp;form=QBIL&amp;qs=n&amp;sk=&amp;sc=8-3"
+        rel="nofollow" class="les2">!bimages</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="http://maps.google.com/maps?q=python" rel=
+        "nofollow" title="Google Maps"><img src="/b_maps2.png"
+        class="inline" /></a> <a title="Google Maps" href=
+        "http://maps.google.com/maps?q=python" rel="nofollow"
+        class="les2">!gmaps</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a title="Yahoo! News" href=
+        "http://news.search.yahoo.com/search?p=python&amp;fr2=sb-top&amp;fr=news-us-ss&amp;type=all&amp;age=all&amp;sao=1"
+        rel="nofollow"><img src="/b_news2.png" class="inline" /></a>
+        <a title="Yahoo! News" href=
+        "http://news.search.yahoo.com/search?p=python&amp;fr2=sb-top&amp;fr=news-us-ss&amp;type=all&amp;age=all&amp;sao=1"
+        rel="nofollow" class="les2">!ynews</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href=
+        "http://www.youtube.com/results?search_query=python"
+        rel="nofollow"><img src="/b_youtube2.png" class=
+        "inline" /></a> <a href=
+        "http://www.youtube.com/results?search_query=python"
+        rel="nofollow" class="les2">!youtube</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="http://search.twitter.com/search?q=python"
+	   rel="nofollow"><img src="/b_twitter2.png" class="inline" /></a>
+	<a href="http://search.twitter.com/search?q=python"
+	   rel="nofollow" class="les2">!twitter</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="http://www.facebook.com/search/?q=python"
+        rel="nofollow"><img src="/b_facebook2.png" class=
+        "inline" /></a> <a href=
+        "http://www.facebook.com/search/?q=python" rel=
+        "nofollow" class="les2">!facebook</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href=
+        "http://amazon.com/s/?tag=dudugo-20&amp;url=search-alias%3Daps&amp;field-keywords=python"
+        rel="nofollow"><img src="/b_amazon2.png" class="inline" /></a>
+        <a href=
+        "http://amazon.com/s/?tag=dudugo-20&amp;url=search-alias%3Daps&amp;field-keywords=python"
+        rel="nofollow" class="les2">!amazon</a>
+      </div>
+
+      <div class="spacer_top_10">
+        <a href="/bang.html" rel="nofollow" class="les2">More w/ !bang...</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="/goodies.html" rel="nofollow" class="les2">More goodies...</a>
+      </div>
+    </div>
+    </div>
+    </div> <!-- side_wrapper //-->
+ 
+
+
+
+      <a rel="nofollow" href="/feedback.html" target="_new"><div class="k_float k_bottom k_right" id="feedback"></div></a>
+
+    <div id="bottom_spacing2"></div>
+
+
+  </div>
+  </div>
+</body>
+</html>

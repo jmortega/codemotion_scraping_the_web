@@ -3,8 +3,8 @@ import time
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
-
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
+#browser = webdriver.Firefox()
 
 browser.get("http://www.youtube.com")
 search_bar=browser.find_element_by_id('masthead-search-term')

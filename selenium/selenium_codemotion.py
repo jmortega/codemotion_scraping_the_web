@@ -9,7 +9,7 @@ import time
 url1="http://2015.codemotion.es/agenda.html#5677904553836544"
 url2="http://2015.codemotion.es/agenda.html#5699289732874240"
 
-urls=[url1,url2]
+urls=[url1]
 
 i=0
 
